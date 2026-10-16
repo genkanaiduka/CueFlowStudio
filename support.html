@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support & Documentation — CueFlow Studio</title>
+  <style>
+    :root {
+      --bg: #090b0e;
+      --card-bg: #14171f;
+      --border: #222733;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-glow: rgba(56, 189, 248, 0.2);
+      --red: #ef4444;
+      --green: #10b981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 48px;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
+    }
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 4px;
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--accent);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .meta {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    h2 {
+      font-size: 19px;
+      font-weight: 600;
+      color: #fff;
+      margin-top: 36px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    h2::before {
+      content: "";
+      width: 4px;
+      height: 18px;
+      background: var(--accent);
+      border-radius: 2px;
+      display: inline-block;
+    }
+    p, ul, ol {
+      color: #cbd5e1;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .key-badge {
+      display: inline-block;
+      font-family: "SF Mono", Menlo, Consolas, monospace;
+      font-size: 12px;
+      font-weight: 600;
+      background: #1e293b;
+      color: #38bdf8;
+      border: 1px solid #334155;
+      border-radius: 4px;
+      padding: 2px 7px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px 0;
+      font-size: 13.5px;
+    }
+    th, td {
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+    th {
+      background: #1a202c;
+      color: #94a3b8;
+      font-weight: 600;
+    }
+    td {
+      background: #14171f;
+      color: #e2e8f0;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 20px 0;
+    }
+    .feature-card {
+      background: #181d28;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 18px;
+    }
+    .feature-card h3 {
+      font-size: 15px;
+      color: #fff;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .feature-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin: 0;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="badge">Official Support & User Guide</div>
+      <h1>CueFlow Studio サポート & ドキュメンテーション</h1>
+      <div class="meta">バージョン: 1.0.0 (Universal for macOS) / 最終更新: 2026年10月16日</div>
+    </div>
+
+    <h2>1. CueFlow Studio の主要機能と特徴</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>💻 PC1台で完結 / 直感的なUI</h3>
+        <p>外部サーバーや追加機材不要。Mac 1台でメディア管理からプレビュー、本番送出まで直感的な3ペインUIでストレスなくオペレーション可能です。</p>
+      </div>
+      <div class="feature-card">
+        <h3>⌨️ キーボードショートカット完全対応</h3>
+        <p>スペース（再生/一時停止）、ESC（即座のブラックアウト）、Cmd+P（プレビュー）、Cmd+G（ガイドフレーム）や各キューの単独ホットキーによるミリ秒単位の即時制御。</p>
+      </div>
+      <div class="feature-card">
+        <h3>🔗 ノードレイヤーを繋いで視覚化</h3>
+        <p>キュー同士をドラッグ＆ドロップでワイヤー接続（IN-OUT）。自動進行やA-Bループを視覚的に把握でき、8色のマーカーカラーで現場の識別性を向上。</p>
+      </div>
+      <div class="feature-card">
+        <h3>📡 プロ仕様のVideo I/O 対応</h3>
+        <p>Blackmagic Design 社製 DeckLink / UltraStudio (SDI/HDMI) のネイティブ送出、およびセカンダリ外部プロジェクターへのクリーンフィード送出に対応。</p>
+      </div>
+    </div>
+    <div class="feature-card" style="margin-top: 8px;">
+      <h3>🔄 放送規格コンバート機能（解像度・フレームレート・スキャンモード）</h3>
+      <p>解像度（720p / 1080p / 4K UHD）、フレームレート（23.98 〜 60 fps）、スキャンモード（p / psf / i）を任意に選択可能。どんな形式の映像や静止画も長端に合わせ（Aspect Fit）、レターボックス/ピラーボックス付きで歪みなく自動変換して送出します。</p>
+    </div>
+
+    <h2>2. キーボードショートカット一覧</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>機能</th>
+          <th>ショートカットキー</th>
+          <th>説明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>再生 / 一時停止</strong></td>
+          <td><span class="key-badge">Space</span></td>
+          <td>アクティブなキューの再生と一時停止をトグル切り替え</td>
+        </tr>
+        <tr>
+          <td><strong>BLANK（暗転・送出停止）</strong></td>
+          <td><span class="key-badge">ESC</span></td>
+          <td>外部出力を即座に純黒（ブラックアウト）にし、音声を完全消音</td>
+        </tr>
+        <tr>
+          <td><strong>PREVIEW MODE</strong></td>
+          <td><span class="key-badge">Cmd + P</span></td>
+          <td>外部出力を遮断し、オペレーターの手元のみで安全にキューを事前確認（緑枠タリー）</td>
+        </tr>
+        <tr>
+          <td><strong>GUIDE FRAME</strong></td>
+          <td><span class="key-badge">Cmd + G</span></td>
+          <td>100%アクティブフレーム枠・センタークロス・規格解像度表示のトグル</td>
+        </tr>
+        <tr>
+          <td><strong>前 / 次のキュー選択</strong></td>
+          <td><span class="key-badge">↑</span> / <span class="key-badge">↓</span></td>
+          <td>リストやキャンバス上のキューを順次選択</td>
+        </tr>
+        <tr>
+          <td><strong>頭出し（リワインド）</strong></td>
+          <td><span class="key-badge">Home</span></td>
+          <td>アクティブキューを先頭（00:00:00.00）へ巻き戻し</td>
+        </tr>
+        <tr>
+          <td><strong>タイムラインシーク</strong></td>
+          <td><span class="key-badge">←</span> / <span class="key-badge">→</span></td>
+          <td>1秒単位で前後にスキップ</td>
+        </tr>
+        <tr>
+          <td><strong>キュー単独トリガー</strong></td>
+          <td><span class="key-badge">0-9</span>, <span class="key-badge">A-Z</span></td>
+          <td>インスペクタの HOTKEY TRIGGER で登録したキーを直接押してワンタッチ送出</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>3. 外部出力（Video I/O）およびコンバート設定ガイド</h2>
+    <ol>
+      <li>右上の <strong>歯車アイコン（SETTINGS）</strong> を開きます。</li>
+      <li><strong>TARGET DISPLAY / VIDEO I/O</strong> の項目を展開し、接続されているセカンダリディスプレイ（プロジェクター）または <strong>Blackmagic Video I/O</strong> を選択します。</li>
+      <li>最下部の <strong>BROADCAST OUTPUT FORMAT</strong> を展開し、現場の放送・音響機器規格に合わせて下記を設定します：
+        <ul>
+          <li><strong>Resolution:</strong> 1080p (Full HD), 2160p (4K UHD), 720p (HD)</li>
+          <li><strong>Frame Rate:</strong> 59.94, 60.00, 29.97, 30.00, 24.00, 23.98 fps</li>
+          <li><strong>Scan Mode:</strong> Progressive (p), Progressive Segmented Frame (psf), Interlaced (i)</li>
+        </ul>
+      </li>
+      <li>「SAVE & APPLY」をクリックすると、DeckLinkハードウェア出力および外部画面に即時反映されます。</li>
+    </ol>
+
+    <h2>4. よくあるご質問 (FAQ)</h2>
+    <p><strong>Q. 外部のBlackmagic機器が認識されません。</strong><br>
+    A. Blackmagic Desktop Video ソフトウェア（v10.11以降〜最新版）がMacにインストールされ、Thunderbolt/USB接続が正常に行われていることをご確認ください。</p>
+
+    <p><strong>Q. リハーサル中に音や映像が客席（外部プロジェクター・PA）に漏れないようにするには？</strong><br>
+    A. 画面中央下の <span class="key-badge">PREVIEW MODE</span>（または <span class="key-badge">Cmd + P</span>）を有効にしてください。モニターが緑枠タリーとなり、外部送出は完全な黒・無音に保たれ、オペレーターのヘッドフォンのみで安全に再生確認できます。</p>
+
+    <h2>5. お問い合わせ窓口</h2>
+    <p>CueFlow Studio に関する機能のご要望、不具合のご報告、導入のご相談は下記までご連絡ください。</p>
+    <p>
+      CueFlow Studio サポートチーム<br>
+      E-mail: <a href="mailto:support@cueflow.studio">support@cueflow.studio</a><br>
+      公式サイト: <a href="https://cueflow.studio">https://cueflow.studio</a><br>
+      プライバシーポリシー: <a href="privacy.html">privacy.html</a>
+    </p>
+
+    <div class="footer">
+      &copy; 2026 CueFlow Studio. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>

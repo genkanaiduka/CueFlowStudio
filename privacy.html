@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — CueFlow Studio</title>
+  <style>
+    :root {
+      --bg: #090b0e;
+      --card-bg: #14171f;
+      --border: #222733;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-glow: rgba(56, 189, 248, 0.2);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 48px;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
+    }
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 4px;
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--accent);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .meta {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    h2::before {
+      content: "";
+      width: 4px;
+      height: 18px;
+      background: var(--accent);
+      border-radius: 2px;
+      display: inline-block;
+    }
+    p, ul {
+      color: #cbd5e1;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .highlight-box {
+      background: rgba(56, 189, 248, 0.06);
+      border-left: 3px solid var(--accent);
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 24px 0;
+    }
+    .highlight-box p {
+      margin: 0;
+      color: #e2e8f0;
+      font-size: 13.5px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="badge">Official Legal Document</div>
+      <h1>プライバシーポリシー (Privacy Policy)</h1>
+      <div class="meta">対象アプリケーション: CueFlow Studio for macOS / 最終改定日: 2026年10月16日</div>
+    </div>
+
+    <div class="highlight-box">
+      <p><strong>要約 (Summary):</strong> CueFlow Studio は、舞台・劇場・イベント・放送現場におけるミッションクリティカルな送出用途向けに設計されており、<strong>ユーザーの個人情報、閲覧履歴、メディアファイル、位置情報等の収集・外部送信は一切行いません</strong>。すべての処理は macOS ローカル環境内で完結します。</p>
+    </div>
+
+    <h2>1. 収集する情報とその利用</h2>
+    <p>CueFlow Studio は、ユーザーの個人を特定できる情報（氏名、メールアドレス、電話番号、IPアドレスなど）を収集しません。</p>
+    <ul>
+      <li><strong>メディアファイルおよびプロジェクトデータ:</strong> 本アプリで読み込まれた動画、静止画、音声ファイル、およびキュー設定情報（.cueflow プロジェクトファイル）は、すべてお客様の Mac のローカルストレージ上でのみ処理されます。外部サーバーやクラウドへの自動アップロードは一切行われません。</li>
+      <li><strong>ローカルストレージの利用:</strong> アプリケーションの設定（外部ディスプレイ選択、解像度・フレームレート・スキャンモードの変換設定、音量等）は、次回起動時の復元のために macOS のローカルストレージ（Sandbox 隔離領域内）にのみ保存されます。</li>
+    </ul>
+
+    <h2>2. ネットワーク通信について</h2>
+    <p>CueFlow Studio は外部インターネットとの不要な通信を行いません。アプリ内部に組み込まれた HTTP ストリーミングエンジン（127.0.0.1:8080）は、macOS 内のローカルプロセス間でのみ動作する純粋なループバック通信であり、外部ネットワークへ開かれたり外部からのアクセスを受け付けたりすることはありません。</p>
+
+    <h2>3. サードパーティ製 SDK・トラッキングツールについて</h2>
+    <p>本アプリケーションには、広告配信 SDK、行動トラッキング SDK（Google Analytics、Firebase 等）、クラッシュ解析用のサードパーティ製ライブラリ等は一切含まれていません。完全なオフライン環境（インターネット未接続の現場環境）でも全機能が完全に動作します。</p>
+
+    <h2>4. ハードウェアへのアクセスについて</h2>
+    <ul>
+      <li><strong>外部ディスプレイおよびビデオ I/O:</strong> セカンダリプロジェクターや Blackmagic Design 社製 DeckLink / UltraStudio ハードウェアへの映像送出のために macOS の CoreGraphics および専用ドライバインターフェースを使用します。これらはすべて映像出力のみに利用されます。</li>
+      <li><strong>オーディオデバイス:</strong> CoreAudio を介して接続されたオーディオインターフェースやヘッドフォンへの音声出力のみを行います。マイク入力や環境音の録音・収集は行いません。</li>
+    </ul>
+
+    <h2>5. お問い合わせ窓口</h2>
+    <p>プライバシーポリシーに関するご質問やご不明な点がございましたら、下記サポート窓口までお気軽にお問い合わせください。</p>
+    <p>
+      CueFlow Studio サポートチーム<br>
+      E-mail: <a href="mailto:support@cueflow.studio">support@cueflow.studio</a><br>
+      ウェブサイト: <a href="https://cueflow.studio">https://cueflow.studio</a>
+    </p>
+
+    <div class="footer">
+      &copy; 2026 CueFlow Studio. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
